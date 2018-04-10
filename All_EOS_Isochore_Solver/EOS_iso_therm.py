@@ -13,24 +13,24 @@ import numpy as np
 
 class isothermal:
 
-	def AP2(self,v,params):###params[0] here is x not V
-	# x, z, n, Vo, Ko,kk == params
+	def AP2(self,v,params):
+	# z, n, Vo, Ko,kk == params
 
-		fw = -np.log(3 *params[4] / 10 / (1003.6 * (params[0] * params[1] / (params[2] * 10)) ** (5 / 3)))
+		fw = -np.log(3 *params[3] / 10 / (1003.6 * (params[0] * params[1] / (params[2] * 10)) ** (5 / 3)))
 		ff = (v/params[2]) ** (1 / 3)
 		aa = 1.5 * (params[4] - 3) - fw
-		P = 3 * params[4] * 1000 * np.exp(fw * (1 - ff)) * (1 / ff ** 5 - 1 / ff ** 4) * (1 + aa * ff - aa * ff ** 2)
+		P = 3 * params[3] * 1000 * np.exp(fw * (1 - ff)) * (1 / ff ** 5 - 1 / ff ** 4) * (1 + aa * ff - aa * ff ** 2)
 		P=P/10000
 		return P
 
 
 	def BM3(self,v,params):
-		#params == V,B0,V0,Bt
+		#params == B0,V0,Bt
 		P = (3/2)*params[0]*((params[1]/v)**(7/3)-(params[1]/v)**(5/3))*(1+((3/4)*(params[2]-4)*((params[1]/v)**(2/3)-1)))
 		return P
 
 	def Vinet(self,v,params):
-	##params = V,B0,V0,Bt
+	##params = B0,V0,Bt
 
 		P = 3*params[0]*(v/params[1])**(-2/3)*(1-(v/params[1])**(1/3))*np.exp((3/2)*(params[2]-1)*(1-(v/params[1])**(1/3)))
 		return P
