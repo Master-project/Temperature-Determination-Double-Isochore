@@ -1,6 +1,6 @@
 #### README ######
 
-The piece of code to be run to run the program is 'Conversion.py'
+The piece of code to be run to run the program is 'Sokolova_Isochore_Solver.py'
 
 This code is to be run using Python 3 (https://www.python.org/)s
 
@@ -14,12 +14,19 @@ https://matplotlib.org/
 
 ##########################################################################
 
-This code is relatively self explanatory, the way in which it is structured means that the two files located in this folder need
-to be located in the same folder at the time of running the code.
+This code is used to determine the temperature of two materials using the volume of both materials.
 
-The code pops up a window for a selection of material, then once this is selected allows the user to select whether or not to plot 
-graphs. This is then followed by the selection of either pressures or temperatures which can output tables or graphs at the user's
-request.
+This code is relatively self explanatory, the way in which it is structured means that the two files located in this folder need
+to be located in the same folder at the time of running the code. 
+
+The code pops up a window for a selection of two materials or for custom parameters, one can also incorporate errors into the analysis.
+
+Note that the volumes and their errors need to be supplied in Angstroms^3 per atom.
+
+The user can also select whether or not they want to incorporate graphical analysis with the plotting and saving of graphs
+This is implemented by the simple use of checkboxes.
+
+The algorithm for determining the temperature is detailed extensively in the Report along with detailed comments given in the code
 
 Note that all code used in the calculation of the properties mentioned is taken from the VBA code provided by Sokolova et al. in 
 their 2016 paper "Microsoft Excel spreadsheets for calculation of P-V-T relations and thermodynamic
@@ -28,7 +35,7 @@ markers in high-pressure and high-temperature experiments".
 
 ##############################################################################
 
-If any problems arise with the program itself please don't hesitate to contact the author at
+If any problems arise with the code or the running of the program itself please don't hesitate to contact the author at
 
 Mark Corrigan - MPhys Student 2017/18
 
