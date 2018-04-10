@@ -1,0 +1,35 @@
+#### README ######
+
+The piece of code to be run to run the program is 'Conversion.py'
+
+This code is to be run using Python 3 (https://www.python.org/)s
+
+To run this code one must make sure that numpy, pandas, matplotlib are installed along with all of the standard Python3 packages.
+
+Available here:
+
+http://www.numpy.org/
+https://pandas.pydata.org/
+https://matplotlib.org/
+
+##########################################################################
+
+This code is relatively self explanatory, the way in which it is structured means that the two files located in this folder need
+to be located in the same folder at the time of running the code.
+
+The code pops up a window for a selection of material, then once this is selected allows the user to select whether or not to plot 
+graphs. This is then followed by the selection of either pressures or temperatures which can output tables or graphs at the user's
+request.
+
+Note that all code used in the calculation of the properties mentioned is taken from the VBA code provided by Sokolova et al. in 
+their 2016 paper "Microsoft Excel spreadsheets for calculation of P-V-T relations and thermodynamic
+properties from equations of state of MgO, diamond and nine metals as pressure
+markers in high-pressure and high-temperature experiments".
+
+##############################################################################
+
+If any problems arise with the program itself please don't hesitate to contact the author at
+
+Mark Corrigan - MPhys Student 2017/18
+
+mark.corrigan1994@gmail.com
