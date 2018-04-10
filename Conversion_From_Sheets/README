@@ -2,7 +2,7 @@
 
 The piece of code to be run to run the program is 'Conversion.py'
 
-This code is to be run using Python 3
+This code is to be run using Python 3 (https://www.python.org/)s
 
 To run this code one must make sure that numpy, pandas, matplotlib are installed along with all of the standard Python3 packages.
 
