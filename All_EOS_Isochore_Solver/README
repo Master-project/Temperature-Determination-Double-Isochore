@@ -1,1 +1,61 @@
-NEED TO COMPLETE THIS
+#### README ######
+
+The piece of code to be run to run the program is 'Isochore_Temperature_Determination.py'
+
+This code is to be run using Python 3 (https://www.python.org/)
+
+To run this code one must make sure that numpy, pandas, matplotlib are installed along with all of the standard Python3 packages.
+
+Available here:
+
+http://www.numpy.org/
+https://pandas.pydata.org/
+https://matplotlib.org/
+
+##########################################################################
+
+This code is used to determine the temperature of two materials using the volume of both materials.
+
+This code is relatively self explanatory, the way in which it is structured means that the two files located in this folder need
+to be located in the same folder at the time of running the code. 
+
+##########################
+Notes for isothermal EOSs
+##########################
+
+Due to the nature of the Holzapfel APL equation of state, it is very particular on how parameters are entered.
+As a result of this, all volumes (both compressed and v_0) specified when using this equation of state have to be in
+the same form as was originally shown in the spreadsheets provided by Sokolova (10.1016/j.cageo.2016.06.002) i.e. 
+V Jbar^-1. The other parameters should also be in the same form as was given in the paper, with Bo being in kbar.
+This will give a result of pressure in bars.
+
+The other two isothermal equations of state which are implemented do not have such stringent conditions imposed on t
+their parameters and will allow for any parameter set with consistent units.
+
+
+############################
+Note for isothermal EOSs
+############################
+
+The Mie-Gruneisen-Debye implement ation of a thermal Equation of state has similar problems to that of the Holzapfel APL equation of state in that the volume needs to be in a specific form (noted thanks to the help section in Ross Angels EOSfit http://www.rossangel.com/home.htm)
+
+The implementation given in this code requires the bulk modulus to be in GPa and the volumes (V and V_0) to be in Angstroms^3/cell.
+
+The other thermal equations of state do not have such constraints and will give correct values for pressure with any parameter set which has consistent units.
+
+
+############################################################
+Incorporation of error is also given in this program using a method given in Practical Physics by Squires.
+
+The user can also select whether or not they want to incorporate graphical analysis with the plotting and saving of graphs
+This is implemented by the simple use of checkboxes.
+
+The algorithm for determining the temperature is detailed extensively in the Report along with detailed comments given in the code
+
+##############################################################################
+
+If any problems arise with the code or the running of the program itself please don't hesitate to contact the author at
+
+Mark Corrigan - MPhys Student 2017/18
+
+mark.corrigan1994@gmail.com
